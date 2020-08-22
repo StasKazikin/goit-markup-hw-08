@@ -1,0 +1,47 @@
+/* What we do section */
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin: 0;
+}
+
+.what-we-do {
+  padding-bottom: 94px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+}
+
+.what-we-do-list {
+  display: flex;
+
+  .item {
+    position: relative;
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

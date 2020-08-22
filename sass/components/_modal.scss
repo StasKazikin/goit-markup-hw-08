@@ -1,0 +1,222 @@
+/* MODAL WINDOW */
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  opacity: 1;
+  scale: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    .modal {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 528px;
+  height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-form .button {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field,
+.textarea-field {
+  position: relative;
+}
+
+.form-field {
+  margin-bottom: 28px;
+}
+
+.textarea-field {
+  max-height: 120px;
+  margin-bottom: 20px;
+}
+
+.policy-field {
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  margin: 0;
+  padding: 12px 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.form-textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .input-icon,
+.form-input:not(:placeholder-shown) + .input-icon {
+  fill: $accent-color;
+}
+
+.form-label,
+.textarea-label {
+  position: absolute;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
+.form-label {
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+}
+
+.textarea-label {
+  top: 12px;
+  left: 16px;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  color: $accent-color;
+  transform: translate(-26px, -40px);
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.form-textarea:focus + .textarea-label,
+.form-textarea:not(:placeholder-shown) + .textarea-label {
+  color: $accent-color;
+  transform: translateY(-30px);
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.policy,
+.policy-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-text-color;
+}
+
+.policy-link {
+  text-decoration-line: underline;
+  color: $accent-color;
+}
+
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid $primary-text-color;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .check-icon {
+  background-color: $accent-color;
+  border-color: $accent-color;
+  background-image: url('../images/svg/check.svg');
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

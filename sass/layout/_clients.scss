@@ -1,0 +1,42 @@
+/* Clients section */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    border: 1px solid $primary-social-links-color;
+    border-radius: 4px;
+
+    fill: $primary-social-links-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+}
+
+.clients-list {
+  display: flex;
+
+  .item {
+    width: calc((100% - 5 * 30px) / 6);
+  }
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
