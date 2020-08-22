@@ -4,44 +4,44 @@
   border-bottom: 1px solid #ececec;
 
   .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
-  .address-nav {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-  }
+  // .address-nav {
+  //   display: flex;
+  //   align-items: center;
+  //   margin-left: auto;
+  // }
 
-  .address-nav .item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // .address-nav .item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
+// .navigation {
+//   display: flex;
+//   align-items: center;
 
-  .logo {
-    margin-right: 85px;
-  }
-}
+//   .logo {
+//     margin-right: 85px;
+//   }
+// }
 
-.site-nav {
-  display: flex;
+// .site-nav {
+//   display: flex;
 
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
+//   .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
 
-  .item {
-    position: relative;
-  }
-}
+//   .item {
+//     position: relative;
+//   }
+// }
 
 .site-nav .link,
 .address-nav .link {

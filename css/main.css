@@ -593,42 +593,8 @@ img {
 }
 
 .header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
-}
-
-.header .address-nav {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
-.header .address-nav .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation .logo {
-  margin-right: 85px;
-}
-
-.site-nav {
-  display: flex;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .item {
-  position: relative;
 }
 
 .site-nav .link,
