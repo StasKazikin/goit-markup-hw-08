@@ -305,8 +305,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
   }
 }
 
@@ -649,6 +647,7 @@ img {
   background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .menu-wrapper.is-open {
@@ -754,7 +753,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/hero-mob.jpg);
   /* если не отрисует bg image */
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -794,8 +793,8 @@ img {
 
 /* About us section */
 .about-us {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about-us .subtitle {
@@ -815,27 +814,49 @@ img {
   margin: 0;
 }
 
-.about-us-list {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .about-us-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.about-us-list .item {
-  width: calc((100% - 3 * 30px) / 4);
+@media screen and (min-width: 768px) {
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-us-list .item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .about-us-list .item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .about-us-list .item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
-.about-us-list .item.item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .about-us-list .item {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-bottom: 0;
+  }
+  .about-us-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-us-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-us-svg {
