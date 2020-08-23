@@ -14,14 +14,18 @@
 }
 
 .menu-wrapper {
+  display: none;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 0;
+  top: 100%;
   left: 0;
-  transform: translateY(60px);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &.is-open {
+    display: block;
+  }
 }
 
 .icon-close {
@@ -41,7 +45,7 @@
   }
 
   &.is-open {
-    
+
     .icon-close {
       display: block;
     }
