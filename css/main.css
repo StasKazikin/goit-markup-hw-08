@@ -696,6 +696,14 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav .link,
+  .address-nav .link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .site-nav .link.current {
   position: relative;
   color: #2196f3;
@@ -738,10 +746,9 @@ img {
 /* HERO section */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px 118px 60px;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -752,16 +759,37 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero-title {
-  width: 696px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 /* About us section */

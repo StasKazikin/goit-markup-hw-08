@@ -695,6 +695,14 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav .link,
+  .address-nav .link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .site-nav .link.current {
   position: relative;
   color: #2196f3;
