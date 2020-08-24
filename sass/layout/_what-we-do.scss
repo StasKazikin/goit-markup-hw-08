@@ -1,5 +1,13 @@
 /* What we do section */
 
+.what-we-do {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
