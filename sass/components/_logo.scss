@@ -1,14 +1,14 @@
 .logo {
-  display: inline-block;
+  display: block;
   color: #000000;
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
 
-  @media screen and (min-wwidth: 1200px) {
-    font-size: 24px;
-    line-height: 1.17;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
