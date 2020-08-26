@@ -1030,6 +1030,13 @@ img {
   line-height: 1.18;
 }
 
+@media screen and (min-width: 1200px) {
+  .team .title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .team .subtitle,
 .team .description {
   font-weight: 500;
@@ -1049,6 +1056,10 @@ img {
   margin-bottom: 16px;
 }
 
+.team-photo {
+  margin-bottom: 30px;
+}
+
 .team-list .item {
   background-color: #ffffff;
   padding-bottom: 24px;
@@ -1056,12 +1067,38 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.team-photo {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-list .item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .team-list .item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .team-list .item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list .item {
+    width: calc((100% - 3 * 30px) / 4);
+    margin-bottom: 0;
+  }
+  .team-list .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* Clients section */
