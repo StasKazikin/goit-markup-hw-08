@@ -4,9 +4,10 @@
   color: $white-color;
 
   .container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: baseline;
+    // justify-content: space-between;
+    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -17,18 +18,20 @@
   }
 
   .email {
-    width: 358px;
+    width: 100%;
     color: $white-color;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 30px;
   }
 
   .button {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .social-links-link {
@@ -57,18 +60,18 @@
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 69px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  margin-bottom: 60px;
 }
 
 .footer-address .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .join-up {
-  margin-right: 94px;
+  margin-bottom: 60px;
 }
 
 .join-up-list {
@@ -96,9 +99,10 @@
 .send-icon {
   margin-left: 10px;
 }
+
 .subscribe-form {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // width: 100%;
+  // justify-content: space-between;
+  // align-items: center;
 }
