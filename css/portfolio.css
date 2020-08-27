@@ -946,7 +946,6 @@ img {
 }
 
 .footer .container {
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -957,20 +956,16 @@ img {
 }
 
 .footer .email {
-  width: 100%;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
-  margin-bottom: 30px;
 }
 
 .footer .button {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer .social-links-link {
@@ -996,16 +991,8 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-nav {
-  margin-bottom: 60px;
-}
-
 .footer-address .item:not(:last-child) {
   margin-bottom: 8px;
-}
-
-.join-up {
-  margin-bottom: 60px;
 }
 
 .join-up-list {
@@ -1030,5 +1017,77 @@ img {
 
 .send-icon {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .container {
+    text-align: center;
+  }
+  .footer .button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .email {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer .subscribe {
+    width: 450px;
+  }
+  .footer-nav {
+    margin-bottom: 60px;
+  }
+  .join-up {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer .container {
+    flex-wrap: wrap;
+    padding-left: 76px;
+  }
+  .footer-nav {
+    margin-right: 165px;
+  }
+  .subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer .email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 70px;
+  }
+  .join-up {
+    margin-right: 93px;
+  }
+  .footer-address .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .subscribe-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

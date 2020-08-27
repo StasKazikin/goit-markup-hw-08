@@ -4,10 +4,6 @@
   color: $white-color;
 
   .container {
-    // display: flex;
-    // align-items: baseline;
-    // justify-content: space-between;
-    text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -18,20 +14,16 @@
   }
 
   .email {
-    width: 100%;
     color: $white-color;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 15px 16px;
-    margin-bottom: 30px;
   }
 
   .button {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .social-links-link {
@@ -59,20 +51,11 @@
   }
 }
 
-.footer-nav {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  margin-bottom: 60px;
-}
-
 .footer-address .item:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.join-up {
-  margin-bottom: 60px;
-}
+
 
 .join-up-list {
   display: flex;
@@ -100,9 +83,100 @@
   margin-left: 10px;
 }
 
-.subscribe-form {
-  // display: flex;
-  // width: 100%;
-  // justify-content: space-between;
-  // align-items: center;
+
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    .container {
+      text-align: center;
+    }
+
+    .button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .email {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .subscribe {
+      width: 450px;
+    }
+  }
+
+  .footer-nav {
+    margin-bottom: 60px;
+  }
+
+  .join-up {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer {
+    .container {
+      display: flex;
+    }
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer {
+    .container {
+      flex-wrap: wrap;
+      padding-left: 76px;
+    }
+  }
+
+  .footer-nav {
+    margin-right: 165px;
+  }
+
+  .subscribe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}  
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    .container {
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .email {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 70px;
+  }
+
+  .join-up {
+    margin-right: 93px;
+  }
+
+  .footer-address .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
