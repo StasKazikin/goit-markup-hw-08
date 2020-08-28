@@ -911,6 +911,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .about-us .subtitle {
+    text-align: center;
+  }
   .about-us-list .item:not(:last-child) {
     margin-bottom: 30px;
   }
